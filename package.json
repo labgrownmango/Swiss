@@ -1,0 +1,48 @@
+{
+  "name": "swiss",
+  "version": "1.0.0",
+  "description": "All-in-One local file utility",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.swiss.app",
+    "productName": "Swiss",
+    "asar": true,
+    "asarUnpack": [
+      "backend/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "icon.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Swiss Tools",
+      "runAfterFinish": true
+    },
+    "files": [
+      "**/*",
+      "!dist/**/*",
+      "!node_modules/*"
+    ]
+  }
+}

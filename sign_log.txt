@@ -1,0 +1,55 @@
+﻿**********************
+nStart der Windows PowerShell-Aufzeichnung
+Startzeit: 20260720143549
+Benutzername: MINI-JOST\jost-
+RunAs-Benutzer: MINI-JOST\jost-
+Konfigurationsname: 
+Computer: MINI-JOST (Microsoft Windows NT 10.0.26200.0)
+Hostanwendung: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\jost-\OneDrive\Desktop(1)\Projekte\swiss\sign_executables.ps1
+Prozess-ID: 32440
+PSVersion: 5.1.26100.8894
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8894
+BuildVersion: 10.0.26100.8894
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Die Aufzeichnung wurde gestartet. Die Ausgabedatei ist "C:\Users\jost-\OneDrive\Desktop(1)\Projekte\swiss\sign_log.txt".
+Generating self-signed code signing certificate...
+Using existing certificate: AFB865D7557D1700C27BB1ADACF092FBC152BA57
+Exporting trusted certificate to Desktop: C:\Users\jost-\OneDrive\Desktop(1)\SwissToolsLocalDev.cer
+Importing certificate into TrustedPublisher store...
+Signing Messenger: D:\Privacy Messenger\electron-signed\electron.exe
+
+
+    Verzeichnis: D:\Privacy Messenger\electron-signed
+
+
+SignerCertificate                         Status                  Path
+-----------------                         ------                  ----
+AFB865D7557D1700C27BB1ADACF092FBC152BA57  UnknownError            electron.exe
+Signing Swiss Backend: C:\Users\jost-\OneDrive\Desktop(1)\Projekte\swiss\backend\dist\backend.exe
+
+
+    Verzeichnis: C:\Users\jost-\OneDrive\Desktop(1)\Projekte\swiss\backend\dist
+
+
+SignerCertificate                         Status                  Path
+-----------------                         ------                  ----
+AFB865D7557D1700C27BB1ADACF092FBC152BA57  UnknownError            backend.exe
+Signing Swiss Tools Installer: C:\Users\jost-\OneDrive\Desktop(1)\Projekte\swiss\dist\Swiss Setup 1.0.0.exe
+
+
+    Verzeichnis: C:\Users\jost-\OneDrive\Desktop(1)\Projekte\swiss\dist
+
+
+SignerCertificate                         Status                  Path
+-----------------                         ------                  ----
+AFB865D7557D1700C27BB1ADACF092FBC152BA57  UnknownError            Swiss Setup 1.0.0.exe
+Signing operations completed successfully! ðŸ›¡ï¸
+**********************
+Ende der Windows PowerShell-Aufzeichnung
+Endzeit: 20260720143553
+**********************
